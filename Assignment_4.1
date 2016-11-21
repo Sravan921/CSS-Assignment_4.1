@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 4.1 - Acadgild Training</title>
+<!-- CSS Code for the Bubble -->
+<style media="screen">
+.bubble
+{
+position: relative;
+width: 163px;
+height: 102px;
+left: 50px;
+background: #00D8FC;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 21px;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 9px 26px 21px 0px;
+    border-color: transparent #00D8FC;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -24px;
+    top: 28px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a CSS3 Bubble</h1>
+<p class="bubble"></p>
+</body>
+</html>
